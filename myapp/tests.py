@@ -7,6 +7,7 @@ class HomePageTest(TestCase):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
 
+<<<<<<< HEAD
     # def test_home_page_contains_navbar(self):
     #     response = self.client.get('/')
     #     self.assertContains(response, '<nav>')
@@ -14,3 +15,8 @@ class HomePageTest(TestCase):
     def test_home_page_contains_paragraph(self):
         response = self.client.get('/')
         self.assertContains(response, '<p>')
+=======
+    def test_home_page_contains_paragraph(self):
+        response = self.client.get('/')
+        self.assertContains(response, '<p>')
+>>>>>>> e35353d5e4aecd5e4ccab20d507c001a49ce26c4
